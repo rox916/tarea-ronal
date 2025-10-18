@@ -1,0 +1,26 @@
+ 2025-10-17 20:26:38,107 WARNING app.api.routes.data User id e28e9005-b0fd-4678-a8cc-3b5ce1ddbd8b no existe en auth.users. Se insertará NULL en user_id.
+2025-10-17 20:26:38,644 ERROR app.api.routes.data Error en pipeline post-upload: Archivo no encontrado en el servidor
+Traceback (most recent call last):
+  File "C:\Users\roxan\OneDrive\Documentos\lovely-data-flow\backend_new\app\api\routes\data.py", line 87, in upload_data
+  File "C:\Users\roxan\OneDrive\Documentos\lovely-data-flow\backend_new\app\services\ml_models.py", line 52, in train_model
+    model_id = str(uuid.uuid4())
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception: Archivo no encontrado en el servidor
+
+2025-10-17 20:26:38,654 INFO app.api.routes.data Archivo 'student-mat.csv' subido y guardado en C:\Users\roxan\OneDrive\Documentos\lovely-data-flow\backend_new\uploads\student-mat.csv, dataset_id=cc96c388-5e18-4d38-9b5c-896c5045895c, model_id=None
+2025-10-17 20:31:02,849 ERROR app.api.routes.data Error comprobando existencia de user en DB: current transaction is aborted, commands ignored until end of transaction block
+
+2025-10-17 21:43:33,722 WARNING app.api.routes.data User id 1cf070dd-2b50-4a4e-ba34-afa46135e297 no existe en auth.users. Se insertará NULL en user_id.
+2025-10-17 21:43:34,160 ERROR app.api.routes.data Error en pipeline post-upload: Archivo no encontrado en el servidor
+Traceback (most recent call last):
+  File "C:\Users\roxan\OneDrive\Documentos\lovely-data-flow\backend_new\app\api\routes\data.py", line 87, in upload_data
+    @router.get("/datasets")
+                          ^^^
+  File "C:\Users\roxan\OneDrive\Documentos\lovely-data-flow\backend_new\app\services\ml_models.py", line 52, in train_model
+    model_id = str(uuid.uuid4())
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception: Archivo no encontrado en el servidor
+
+2025-10-17 21:43:34,160 INFO app.api.routes.data Archivo 'student-mat.csv' subido y guardado en C:\Users\roxan\OneDrive\Documentos\lovely-data-flow\backend_new\uploads\student-mat.csv, dataset_id=d0f63fec-5efa-41b9-9df8-9436bd50da44, model_id=None
+2025-10-17 22:11:17,038 INFO app.api.routes.data Archivo 'horarios-2025-09-29.csv' subido y guardado en C:\Users\roxan\OneDrive\Documentos\lovely-data-flow\backend_new\uploads\horarios-2025-09-29.csv
+2025-10-17 22:55:28,433 INFO app.api.routes.data Archivo 'horarios-2025-09-29.csv' subido y guardado en C:\Users\roxan\OneDrive\Documentos\lovely-data-flow\backend_new\uploads\horarios-2025-09-29.csv
